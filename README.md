@@ -1,4 +1,5 @@
-denkbraeu
-=========
+# denkbräu
 
-denkbräu website
+denkbräu website (currently under construction)
+
+http://denkbraeu.com
