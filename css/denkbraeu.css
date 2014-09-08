@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	font-family: Georgia, serif;
+	text-align: center;
+	background: #34c46d;
+}
+
+h1 {
+	margin: 0;
+	font-size: 75px;
+	font-weight: normal;
+	color: #34c46d;
+}
+
+h2 {
+	margin: 0;
+	font-size: 70px;
+	line-height: 70px;
+	font-weight: normal;
+	color: #fff;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+#teaser {
+	position: absolute;
+	overflow: hidden;
+	z-index: 2;
+	width: 320px;
+	height: 420px;
+	top: 50%;
+	left: 50%;
+	margin-top: -280px;
+	margin-left: -160px;
+	background: #34c46d;
+}
+
+#logo {
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+
+	50% {
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+
+	100% {
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+
+	50% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	100% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+}
+
+#twitter {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	bottom: 20px;
+	font-size: 25px;
+	font-style: italic;
+}
+
+#twitter a {
+	display: inline-block;
+	padding: 10px 15px;
+	color: white;
+}
+
+#twitter a:hover {
+	color: #34c46d;
+	background-color: white;
+}
