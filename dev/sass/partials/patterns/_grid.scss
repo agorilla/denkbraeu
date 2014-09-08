@@ -1,0 +1,35 @@
+// Grid pattern
+
+.grid {
+	@include media($screenMedium) {
+		@extend .clearfix;
+	}
+}
+
+// 3 column grid (on large screens)
+.grid-3 {
+	.grid_col {
+		@include media($screenMedium) {
+			width: (100% - ($gridGutter * 2)) / 2
+		}
+
+		@include media($screenLarge) {
+			width: (100% - ($gridGutter * 2)) / 3
+		}
+	}
+}
+
+// Grid column
+.grid_col {
+	@include media($screenMedium) {
+		display: inline;
+		float: left;
+		margin-left: $gridGutter;
+
+		&:first-child {
+			// Remove margin on first column
+			margin-left: 0;
+		}
+	}
+}
+

@@ -1,0 +1,17 @@
+// Product teaser
+
+.teaser-product {
+	margin-bottom: 2.5rem;
+
+	h3 {
+		@extend .text-center;
+		@extend .text-upper;
+	}
+}
+
+// Product teaser image
+.teaser-product_image {
+	@extend .img-block;
+
+	margin-bottom: 1rem;
+}

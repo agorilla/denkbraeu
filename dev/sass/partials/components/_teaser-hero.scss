@@ -1,0 +1,20 @@
+// Hero teaser
+
+.teaser-hero {
+	@extend .text-center;
+
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	background-color: $colorLight;
+
+	@include media($screenMedium) {
+		margin-bottom: 3rem;
+	}
+}
+
+// Hero teaser image
+.teaser-hero_img {
+	display: inline-block;
+	max-width: 130%;
+	max-height: 95%;
+}

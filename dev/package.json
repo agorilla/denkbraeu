@@ -1,0 +1,31 @@
+{
+  "name": "agorilla",
+  "version": "0.1.0",
+  "description": "Website of Simon Koch",
+  "main": "../dist/index.html",
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-autoprefixer": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "0.14.0",
+    "grunt-svgmin": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:agorilla/agorilla.git"
+  },
+  "keywords": [
+    "None"
+  ],
+  "author": "Simon Koch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agorilla/agorilla/issues"
+  },
+  "homepage": "http://agorilla.de/",
+  "private": true
+}

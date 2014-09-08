@@ -1,0 +1,42 @@
+// Headline patterns
+
+// Primary headline
+%headline-primary {
+	font-family: $fontPrimary;
+	font-weight: normal;
+}
+
+// Secondary headline
+%headline-secondary {
+	font-family: $fontSecondary;
+}
+
+// Headline 2
+h2, .h2 {
+	@extend %headline-primary;
+
+	margin: 0 0 2rem;
+	font-size: 2rem;
+
+	@include media($screenMedium) {
+		font-size: 3rem;
+		margin-bottom: 3rem;
+	}
+}
+
+// Headline 3
+h3, .h3 {
+	@extend %headline-secondary;
+
+	margin: 0 0 1.2rem;
+	font-size: 1.7rem;
+	font-weight: normal;
+}
+
+// Headline 4
+h4, .h4 {
+	@extend %headline-secondary;
+
+	margin: 0;
+	font-size: 1.3rem;
+}
