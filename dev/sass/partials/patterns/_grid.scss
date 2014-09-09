@@ -10,11 +10,11 @@
 .grid-3 {
 	.grid_col {
 		@include media($screenMedium) {
-			width: (100% - ($gridGutter * 2)) / 2
+			width: 50%;
 		}
 
 		@include media($screenLarge) {
-			width: (100% - ($gridGutter * 2)) / 3
+			width: 33.3333%;
 		}
 	}
 }
@@ -24,12 +24,6 @@
 	@include media($screenMedium) {
 		display: inline;
 		float: left;
-		margin-left: $gridGutter;
-
-		&:first-child {
-			// Remove margin on first column
-			margin-left: 0;
-		}
 	}
 }
 

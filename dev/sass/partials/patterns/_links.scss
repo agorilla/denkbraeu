@@ -5,3 +5,23 @@
 	color: $colorWhite;
 	text-decoration: none;
 }
+
+// Teaser link
+.link-teaser {
+	display: inline-block;
+	font-family: $fontPrimary;
+	font-size: 1.4rem;
+	border-bottom: 1px dotted;
+}
+
+// Claim link
+.link-claim {
+	display: inline-block;
+	font-family: $fontPrimary;
+	font-size: 1.3rem;
+	color: $colorPrimary;
+
+	@include media($screenMedium) {
+		font-size: 1.6rem;
+	}
+}

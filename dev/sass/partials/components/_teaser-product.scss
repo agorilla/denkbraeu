@@ -1,17 +1,46 @@
 // Product teaser
 
 .teaser-product {
-	margin-bottom: 2.5rem;
+	a {
+		position: relative;
+		display: block;
+		padding: 1.5rem 2.5rem 2rem;
+		box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba($colorBlack, 0.3);
+		background-color: rgba($colorWhite, 0.1);
+
+		@include media($screenMedium) {
+			height: 350px;
+
+			.link-teaser {
+				position: absolute;
+				bottom: 2rem;
+			}
+		}
+	}
 
 	h3 {
 		@extend .text-center;
 		@extend .text-upper;
 	}
+
+	p {
+		margin: 0 0 1.5rem;
+	}
+
 }
 
-// Product teaser image
-.teaser-product_image {
-	@extend .img-block;
+// Black product teaser
+.teaser-product-black {
+	a {
+		color: $colorPrimary;
+		background-color: $colorBlack;
+	}
+}
 
-	margin-bottom: 1rem;
+// White product teaser
+.teaser-product-white {
+	a {
+		color: $colorPrimary;
+		background-color: $colorWhite;
+	}
 }

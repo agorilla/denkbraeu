@@ -3,8 +3,10 @@
 .teaser-hero {
 	@extend .text-center;
 
+	position: relative;
 	overflow: hidden;
 	margin-bottom: 1.5rem;
+	box-shadow: 0 0.2rem 0.5rem 0 rgba($colorBlack, 0.2);
 	background-color: $colorLight;
 
 	@include media($screenMedium) {
@@ -16,5 +18,5 @@
 .teaser-hero_img {
 	display: inline-block;
 	max-width: 130%;
-	max-height: 95%;
+	max-height: 100%;
 }
