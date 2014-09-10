@@ -25,3 +25,14 @@
 		font-size: 1.6rem;
 	}
 }
+
+// Back link
+.link-back {
+	@extend .link-teaser;
+
+	position: absolute;
+	z-index: 50;
+	top: 1rem;
+	right: 0;
+	color: $colorPrimary;
+}

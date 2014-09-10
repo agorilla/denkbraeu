@@ -4,8 +4,4 @@
 	padding-bottom: 3rem;
 	color: $colorWhite;
 	background-color: $colorPrimary;
-
-	@include media($screenMedium) {
-		padding-bottom: 6rem;
-	}
 }

@@ -5,13 +5,8 @@
 
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 1.5rem;
 	box-shadow: 0 0.2rem 0.5rem 0 rgba($colorBlack, 0.2);
 	background-color: $colorLight;
-
-	@include media($screenMedium) {
-		margin-bottom: 3rem;
-	}
 }
 
 // Hero teaser image
@@ -19,4 +14,28 @@
 	display: inline-block;
 	max-width: 130%;
 	max-height: 100%;
+}
+
+// Hero teaser text
+.teaser-hero_text {
+	color: $colorBlack;
+	padding-top: 4rem;
+
+	@include media($screenMedium) {
+		position: absolute;
+		left: 300px;
+	}
+}
+
+// Product hero teaser
+.teaser-hero-product {
+	@extend .text-left;
+
+	.teaser-hero_img {
+		max-height: 400px;
+
+		@include media($screenMedium) {
+			max-height: 600px;
+		}
+	}
 }

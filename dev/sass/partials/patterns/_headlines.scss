@@ -11,6 +11,15 @@
 	font-family: $fontSecondary;
 }
 
+// Headline 1
+h1, .h1 {
+	@extend %headline-primary;
+
+	margin: 0;
+	font-size: 4rem;
+}
+
+
 // Headline 2
 h2, .h2 {
 	@extend %headline-primary;
@@ -20,7 +29,7 @@ h2, .h2 {
 
 	@include media($screenMedium) {
 		font-size: 3rem;
-		margin-bottom: 3.5rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -37,6 +46,15 @@ h3, .h3 {
 h4, .h4 {
 	@extend %headline-secondary;
 
-	margin: 0;
+	margin: 0 0 1.5rem;
 	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+// Headline 5
+h5, .h5 {
+	@extend %headline-primary;
+
+	margin: 0 0 0.5rem;
+	font-size: 1.5rem;
 }
