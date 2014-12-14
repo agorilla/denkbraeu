@@ -14,11 +14,10 @@
 		<meta content="Homebrew" name="text:Featured tag six">
 		<meta content="Simon Koch und Holger Beßlich" name="text:Featured tag seven">
 		<meta content="Brau-Rezept" name="text:Featured tag eight">
-		
-		
 
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lusitana' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/picturefill.js"></script>
 	</head>
 
 	<body>
@@ -26,7 +25,69 @@
 			<main class="site_main">
 				<section class="teaser-hero space-bottom-large">
 					<a href="#bier">
-						<img class="teaser-hero_img" src="img/teaser-hero/denkbraeu-sortiment.jpg" srcset="img/teaser-hero/denkbraeu-sortiment@2x.jpg 2x" alt="" title="">
+						<picture>
+							<!--
+								Retina WebP
+								saving:
+								- desktop 18%
+								- tablet 64%
+								- mobile 88%
+							-->
+							<source type="image/webp"
+									media="(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5)"
+									srcset="
+										img/teaser-hero/denkbraeu-large-retina.webp 2560w,
+										img/teaser-hero/denkbraeu-medium-retina.webp 1600w,
+										img/teaser-hero/denkbraeu-small-retina.webp 840w"
+									sizes="100vw">
+
+							<!--
+								WebP
+								saving:
+								- desktop 51%
+								- tablet 80%
+								- mobile 93%
+							-->
+							<source type="image/webp"
+									srcset="
+										img/teaser-hero/denkbraeu-large.webp 1280w,
+										img/teaser-hero/denkbraeu-medium.webp 800w,
+										img/teaser-hero/denkbraeu-small.webp 420w"
+									sizes="100vw">
+
+							<!--
+								Retina JPG
+								saving:
+								- desktop -9%
+								- tablet 50%
+								- mobile 84%
+							-->
+							<source media="(min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5)"
+									srcset="
+										img/teaser-hero/denkbraeu-large-retina.jpg 2560w,
+										img/teaser-hero/denkbraeu-medium-retina.jpg 1600w,
+										img/teaser-hero/denkbraeu-small-retina.jpg 840w"
+									sizes="100vw">
+
+							<!--
+								JPG
+								saving:
+								- desktop 0%
+								- tablet 59%
+								- mobile 86%
+							-->
+							<source srcset="
+										img/teaser-hero/denkbraeu-large.jpg 1280w,
+										img/teaser-hero/denkbraeu-medium.jpg 800w,
+										img/teaser-hero/denkbraeu-small.jpg 420w"
+									sizes="100vw">
+
+							<!--
+								Fallback JPG
+								if browser does not support picture and JS is disabled
+							-->
+							<img src="img/teaser-hero/denkbraeu-small.jpg" class="teaser-hero_img">
+						</picture>
 					</a>
 				</section>
 
@@ -68,7 +129,7 @@
 					Folgt <a href="https://twitter.com/denkbraeu" target="_blank">denkbräu <b>auf Twitter</b></a> und bewertet uns
 					<a href="https://untappd.com/denkbraeu" target="_blank"><b>auf Untappd.</b></a></p>
 				</div>
-				
+
 			</main>
 
 			<footer class="site_footer">
