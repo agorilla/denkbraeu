@@ -33,6 +33,8 @@
 	@extend .text-left;
 
 	.teaser-hero_img {
+		width: auto;
+		max-width: auto;
 		max-height: 400px;
 
 		@include media($screenMedium) {

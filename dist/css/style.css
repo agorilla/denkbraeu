@@ -774,6 +774,8 @@ h5, .h5 {
       left: 300px; } }
 
 .teaser-hero-product .teaser-hero_img {
+  width: auto;
+  max-width: auto;
   max-height: 400px; }
   @media (min-width: 42em) {
     .teaser-hero-product .teaser-hero_img {
