@@ -156,6 +156,19 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Run shell commands
+		shell: {
+			options: {
+				stderr: false
+			},
+
+			// Deploys distribution folder to Github Pages branch
+			// https://gist.github.com/cobyism/4730490
+			deploy: {
+				command: 'git subtree push --prefix dist origin gh-pages'
+			}
+		},
+
 		// Watch tasks
 		watch: {
 			sass: {
@@ -180,6 +193,9 @@ module.exports = function (grunt) {
 	grunt.registerTask('dev-sass', ['sass', 'autoprefixer']);
 	grunt.registerTask('image', ['clean:images', 'responsive_images', 'cwebp', 'clean:webp', 'imageoptim', 'copy:images', 'clean:images']);
 	grunt.registerTask('svg', ['svgmin']);
+
+	// Deploy task
+	grunt.registerTask('deploy', ['shell:deploy']);
 
 	// Default task(s).
 	// ORDER IS IMPORTANT
