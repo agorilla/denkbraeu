@@ -165,7 +165,7 @@ module.exports = function (grunt) {
 			// Deploys distribution folder to Github Pages branch
 			// https://gist.github.com/cobyism/4730490
 			deploy: {
-				command: 'git subtree push --prefix dist origin gh-pages'
+				command: 'git subtree push --prefix ../dist origin gh-pages'
 			}
 		},
 
