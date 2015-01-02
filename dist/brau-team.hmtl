@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>denkbräu - das Brau-Team. Bier aus dem denkwerk in Ehrenfeld.</title>
+
+		<meta name="description" content="denkbräu Brau-Team mit handgebrautem Bier aus Ehrenfeld. Im Zeichen der Craftbeer Bewegung hergestellt im denkwerk">
+		<meta name=viewport content="width=device-width,initial-scale=1">
+		<meta content="Agenturbier" name="text:Featured tag one">
+		<meta content="Craftbeer" name="text:Featured tag two">
+		<meta content="denkbräu" name="text:Featured tag three">
+		<meta content="denkwerk Ehrenfeld" name="text:Featured tag four">
+		<meta content="Brauen" name="text:Featured tag five">
+		<meta content="Homebrew" name="text:Featured tag six">
+		<meta content=" Holger Beßlich und Simon Koch" name="text:Featured tag seven">
+		<meta content="Brau-Team" name="text:Featured tag eight">
+		
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lusitana' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="site">
+			<main class="site_main">
+				<section class="teaser-hero teaser-hero-product space-bottom-medium">
+					<div class="site_inner">
+						<div class="relative">
+							<a class="link-back" href="index.html">zurück</a>
+
+							<div class="teaser-hero_text">
+								<h1>denkbräu Brau-Team</h1>
+                Das denkbräu Team besteht aus vielen Kolleginnen und Kollegen <a class="link-claim" href="http://www.denkwerk.com/" target="_blank">aus dem denkwerk in Köln</a>
+								Jede/r hat ihren/seinen Beitrag zum Gelingen des <i>Projekts Agenturbier</i> beigetragen. Für diesen Einsatz möchten wir an dieser Stelle sagen: ganz herzlichen Dank!
+								<br>
+								<h3>Freunde und Förderer</h3>
+								<b>Jochen Schlaier</b> und <b>Marco Zingler</b><br>
+								<h3>Brewmaster</h3>
+                <b><a class="link-claim" href="https://twitter.com/0211club/" target="_blank">Holger Beßlich</a></b> und <b><a class="link-claim" href="https://twitter.com/agorilla/" target="_blank">Simon Koch</a></b>
+								
+								<h3>Superdank</h3>
+								Ein besonderes Dankeschön geht an unseren Freund und <a class="link-claim" href="http://about.me/danielkoening"target="_blank">Mentor Daniel Koening</a> vom <a class="link-claim" href="https://untappd.com/FlingernBrewLabs" target="_blank">Flingern Brew Labs in Düsseldorf</a> für die tatkräftige Begleitung in der Anfangsphase und den regen Austausch bei all unseren weiteren Brau-Vorhaben.  
+								Daniel glänzt mit Wissen, Gefühl für das Detail und seine Herzlichkeit. Wir sind froh, dass er uns in diese Richtung gebtracht hat, um denkbräu und das Agenturbier auch an ein größeres Publikum auszuschenken.<br>  
+								</p>
+							</div>
+						</div>
+					</div>
+					<img class="teaser-hero_img" src="img/product/Bier_V66_denkbraeu.jpg" alt="denkbräu V66" title="denkbräu V66">
+				</section>
+
+				<div class="site_inner">
+					<h2 class="text-center">Danke ans Team</h2>
+
+					<h4 class="text-center">Danke an die vielen Helfenden Hände.</h4>
+          Vor allem geht ein dickes Danke Meike und das Office-Team, dass uns bei bei allen denkbräu Vorhaben wie Bestellungen zum Bierbrauen und anderen kleinen und großen Thmen rund ums Brauen so tatkräftig unterstützt hat.
+          
+          <h5>Brau-Helfer</h5>
+	        Ohne unseren fleißgen Brau-Feen wären wir wahrscheinlich nicht soweit mit denkbräu: Danke. Danke euch!
+	        <b<Philipp Zwick, Stefanie von der Forst, Robert Krämer,  Maren Schink, Christian Leuenhagen, Meike Büchner, Markus Miethke, Charlotte Block, Martin Korbach, Sandra Engler, Kilian Lakebrink, Corinna Voss, Thomas Kierdorf, Sandra Straßfeld, Nadine Winkler, Anke Eberhard, 
+
+					<h5>Design Team</h5>
+					<b>Jana Gaukstern, Janine Bernsdorf, Lucia Grompone, Coarlie Feil, Jan Lankisch, Susanne Junglas</b>
+					
+					<h5>denkbräu Backstube</h5>
+					<b>Charlotte Block, Holger Beßlich</b>
+					
+					<h5>Video-Team und Fotos</h5>
+					<b>Schnitt: Alexander Mitzkus, Gregor Kurschmirz. Bild-und Video-Material: Simon Koch, Holger Beßlich</b>
+					
+					<p>Freunde, Bekannte und Fußball</p>
+					<ul>
+						<li><a class="link-claim" href="https://twitter.com/TypewriterBrewing" target="_blank">Typewriter Brewing</a> </li>
+						<li><a class="link-claim" href="http://www.flingernbrewlabs.com/" target="_blank">Flingern Brew Labs</a> </li>
+						<li><a class="link-claim" href="http://www.F95.de/" target="_blank">Fortuna Düsseldorf</a> </li>
+						<li><a class="link-claim" href="http://www.fckoeln.de//" target="_blank">1.FC Köln</a> </li>
+					</ul>
+
+					<ul>
+						<li>Noch ne Liste</li>
+						<li>Listen Freunde Ehrenfeld</li>
+					</ul>
+
+					<p>mehr text?</p>
+				
+				</div>
+			</main>
+
+			<footer class="site_footer">
+				<div class="site-inner">
+					<a class="link-claim" href="http://www.denkwerk.com/de/kontakt/" target="_blank">Mit Liebe im denkwerk gebraut.</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
