@@ -14,6 +14,7 @@
     "grunt-imagine": "^0.3.53",
     "grunt-responsive-images": "^0.1.4",
     "grunt-sass": "0.14.0",
+    "grunt-shell": "^1.1.1",
     "grunt-svgmin": "^0.4.0",
     "grunt-webp-compress": "0.0.3",
     "load-grunt-tasks": "^0.6.0"
