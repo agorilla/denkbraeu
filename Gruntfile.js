@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 		sass: {
 			dist: {
 				files: {
-					'../dist/css/style.css': 'sass/style.scss'
+					'dist/css/style.css': 'dev/sass/style.scss'
 				}
 			}
 		},
@@ -14,8 +14,8 @@ module.exports = function (grunt) {
 		// CSS vendor prefixes
 		autoprefixer: {
 			build: {
-				src: '../dist/css/style.css',
-				dest: '../dist/css/style.css'
+				src: 'dist/css/style.css',
+				dest: 'dist/css/style.css'
 			},
 			options: {
 				// available options:
@@ -71,9 +71,9 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'img',
+					cwd: 'dev/img',
 					src: ['**/*.jpg'],
-					dest: 'img-temp'
+					dest: 'dev/img-temp'
 				}]
 			}
 		},
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
 					concurrency: 20
 				},
 				files: [
-					{src: ['img-temp/**/*.jpg']}
+					{src: ['dev/img-temp/**/*.jpg']}
 				]
 			},
 			retina: {
@@ -96,7 +96,7 @@ module.exports = function (grunt) {
 					concurrency: 20
 				},
 				files: [
-					{src: ['img-temp/**/*-retina-webp.jpg']}
+					{src: ['dev/img-temp/**/*-retina-webp.jpg']}
 				]
 			}
 		},
@@ -104,7 +104,7 @@ module.exports = function (grunt) {
 		// Lossless image optimization
 		imageoptim: {
 			dev: {
-				src: ['img-temp']
+				src: ['dev/img-temp']
 			}
 		},
 
@@ -121,9 +121,9 @@ module.exports = function (grunt) {
 				files: [
 					{
 						expand: true,
-						cwd: 'img',
+						cwd: 'dev/img',
 						src: ['**/*.svg'],
-						dest: '../dist/img/',
+						dest: 'dist/img/',
 						ext: '.svg'
 					}
 				]
@@ -133,10 +133,10 @@ module.exports = function (grunt) {
 		// Clean tasks
 		clean: {
 			images: {
-				src: ['img-temp']
+				src: ['dev/img-temp']
 			},
 			webp: {
-				src: ['img-temp/**/*-webp.jpg', 'img-temp/**/*-retina.jpg.webp']
+				src: ['dev/img-temp/**/*-webp.jpg', 'dev/img-temp/**/*-retina.jpg.webp']
 			}
 		},
 
@@ -145,9 +145,9 @@ module.exports = function (grunt) {
 			images: {
 				files: [{
 					expand: true,
-					cwd: 'img-temp',
+					cwd: 'dev/img-temp',
 					src: ['**'],
-					dest: '../dist/img/',
+					dest: 'dist/img/',
 
 					rename: function (dest, src) {
 						return dest + src.replace('-webp.jpg.webp', '.webp').replace('.jpg.webp', '.webp');
@@ -165,22 +165,22 @@ module.exports = function (grunt) {
 			// Deploys distribution folder to Github Pages branch
 			// https://gist.github.com/cobyism/4730490
 			deploy: {
-				command: 'git subtree push --prefix ../dist origin gh-pages'
+				command: 'git subtree push --prefix dist origin gh-pages'
 			}
 		},
 
 		// Watch tasks
 		watch: {
 			sass: {
-				files: ['sass/**/*.scss'],
+				files: ['dev/sass/**/*.scss'],
 				tasks: ['dev-sass']
 			},
 			images: {
-				files: ['img/**/*.jpg'],
+				files: ['dev/img/**/*.jpg'],
 				tasks: ['image']
 			},
 			svg: {
-				files: ['img/**/*.svg'],
+				files: ['dev/img/**/*.svg'],
 				tasks: ['svg']
 			}
 		}
